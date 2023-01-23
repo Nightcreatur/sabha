@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sabha',
-      theme: ThemeData(primarySwatch: Colors.cyan),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomePage(),
     );
   }
@@ -28,17 +28,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(248, 214, 215, 215),
+      backgroundColor: const Color.fromARGB(248, 214, 215, 215),
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: GestureDetector(
-              onTap: null,
-              child: const Icon(Icons.menu),
-            ),
-          )
-        ],
+        leading: Container(
+          margin: const EdgeInsets.only(left: 5),
+          height: 70,
+          child: const Image(image: AssetImage('assets/images/pga_logo.png')),
+        ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -52,20 +48,18 @@ class HomePage extends StatelessWidget {
                 height: 300,
                 child: Categories(),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Bidhayek()
+              // Bidhayek()
             ],
           ),
         ),
-      )
+      ),
+      endDrawer: const MyDrawer(),
 
       // Categories(),
-      ,
-      drawer: const Drawer(
-        child: MyDrawer(),
-      ),
+
       bottomNavigationBar: const BottomBar(),
     );
   }

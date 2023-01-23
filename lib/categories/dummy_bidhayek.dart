@@ -10,5 +10,5 @@ class DummyBidhayek {
       {required this.id,
       required this.name,
       required this.img,
-      this.color = Colors.cyan});
+      this.color = Colors.blue});
 }

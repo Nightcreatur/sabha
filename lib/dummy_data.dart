@@ -20,36 +20,31 @@ const dummyData = [
   DummyData(
     id: 'c4',
     name: 'डोउन्ळोड ',
-    icone: Icons.abc,
+    icone: Icons.download,
   ),
   DummyData(
     id: 'c5',
     name: 'संगठन संरचना ',
-    icone: Icons.abc,
+    icone: Icons.straight,
   ),
   DummyData(
     id: 'c6',
     name: 'फोटो ग्यालेरी ',
-    icone: Icons.abc,
+    icone: Icons.photo,
   ),
   DummyData(
     id: 'c5',
     name: 'भिडियो ग्यालेरी ',
-    icone: Icons.abc,
+    icone: Icons.video_file,
   ),
   DummyData(
     id: 'c6',
     name: 'प्रदेश पोर्टल ',
-    icone: Icons.abc,
+    icone: Icons.web,
   ),
   DummyData(
     id: 'c5',
     name: 'प्रकाशन ',
-    icone: Icons.abc,
-  ),
-  DummyData(
-    id: 'c6',
-    name: 'टेलिफोने निर्देशिका ',
-    icone: Icons.abc,
+    icone: Icons.publish,
   ),
 ];
