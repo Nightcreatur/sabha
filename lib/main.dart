@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(248, 214, 215, 215),
+      backgroundColor: Color.fromARGB(248, 209, 230, 245),
       appBar: AppBar(
         leading: Container(
           margin: const EdgeInsets.only(left: 5),

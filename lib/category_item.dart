@@ -15,17 +15,18 @@ class CategoryItem extends StatelessWidget {
       onTap: null,
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(12),
             gradient: LinearGradient(colors: [color.withOpacity(.7), color])),
         padding: const EdgeInsets.all(10),
         child: Center(
             child: Column(
           children: [
-            Icon(icone, color: Theme.of(context).primaryColor),
+            Icon(icone, color: Colors.white),
             Text(
               name,
               style: const TextStyle(
-                  color: Colors.blueGrey, fontWeight: FontWeight.bold),
+                  color: Color.fromARGB(255, 248, 248, 248),
+                  fontWeight: FontWeight.bold),
             ),
           ],
         )),

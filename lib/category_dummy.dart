@@ -10,5 +10,5 @@ class DummyData {
       {required this.id,
       required this.name,
       required this.icone,
-      this.color = Colors.white38});
+      this.color = Colors.blue});
 }

@@ -8,9 +8,11 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView(
+      shrinkWrap: true,
+      scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.all(25),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           childAspectRatio: 1.4,
           crossAxisSpacing: 8,
           mainAxisSpacing: 8),
