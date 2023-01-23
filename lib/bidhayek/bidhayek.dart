@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sabha/categories/bidhaye_item.dart';
-
-import 'categories/bidhayek_data.dart';
+import '../bidhayek/bidhayek_data.dart';
+import 'bidhaye_item.dart';
 
 class Bidhayek extends StatelessWidget {
   const Bidhayek({super.key});
@@ -12,9 +11,10 @@ class Bidhayek extends StatelessWidget {
       child: SizedBox(
         height: 200,
         child: GridView(
+          scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.all(25),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
+              crossAxisCount: 1,
               childAspectRatio: 1.4,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8),

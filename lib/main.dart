@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sabha/bidhayek.dart';
 import 'package:sabha/bottom_bar.dart';
 import 'package:sabha/carousle.dart';
-import 'package:sabha/categories.dart';
 
 import 'package:sabha/drawer.dart';
+
+import 'bidhayek/bidhayek.dart';
+import 'categories/categories.dart';
 
 void main() => runApp(const MyApp());
 
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              // Bidhayek()
+              const Bidhayek()
             ],
           ),
         ),

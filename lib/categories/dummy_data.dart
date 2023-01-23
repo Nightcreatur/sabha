@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sabha/category_dummy.dart';
+
+import 'category_dummy.dart';
 
 const dummyData = [
   DummyData(

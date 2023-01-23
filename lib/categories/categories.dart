@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sabha/category_item.dart';
-import 'package:sabha/dummy_data.dart';
+
+import 'package:sabha/categories/dummy_data.dart';
+
+import 'category_item.dart';
 
 class Categories extends StatelessWidget {
   const Categories({super.key});
@@ -11,7 +13,7 @@ class Categories extends StatelessWidget {
       shrinkWrap: true,
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.all(25),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 1.4,
           crossAxisSpacing: 8,
